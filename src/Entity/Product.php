@@ -11,8 +11,12 @@ use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 
 /**
  * @ORM\Entity(repositoryClass=ProductRepository::class)
- * @ApiResource
- * @ApiFilter(SearchFilter::class, properties={"title":"partial", "category":"partial"}
+ * @ApiResource(
+ *  attributes={
+ *          "order":{"price":"desc"}
+ *      }
+ * )
+ * @ApiFilter(SearchFilter::class, properties={"title":"partial", "category.title":"partial"}
  * )
  * @ApiFilter(OrderFilter::class, properties={"title"="ASC"})
  */

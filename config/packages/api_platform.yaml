@@ -12,7 +12,7 @@ api_platform:
             enabled: false
             ##IF CLIENT ACTIVATE THE PAGINATION, DEFAULT 5/PAGE
             client_enabled: true
-            items_per_page: 5
+            items_per_page: 10
             ##IF CLIENT WANTS TO CHOOSE THE Nb/PAGE
             client_items_per_page: true
             items_per_page_parameter_name: "count"
