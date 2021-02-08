@@ -5,3 +5,14 @@ api_platform:
         json: ['application/merge-patch+json']
     swagger:
         versions: [3]
+    collection:
+        ##PAGINATION
+        pagination:
+            ##DISABLE NORMALLY
+            enabled: false
+            ##IF CLIENT ACTIVATE THE PAGINATION, DEFAULT 5/PAGE
+            client_enabled: true
+            items_per_page: 5
+            ##IF CLIENT WANTS TO CHOOSE THE Nb/PAGE
+            client_items_per_page: true
+            items_per_page_parameter_name: "count"
